@@ -1,6 +1,6 @@
 // One edit away
 
-// ec: 
+// ec:
 // "example" vs "eample" --> true
 // "hello" --> "helto" --> true
 // "hihi" --> "bibi" --> false
@@ -19,9 +19,14 @@ function oneWay(str1, str2) {
   }
   // for str length diff of 1, after finding one diff instance, must shift index to check the rest.
   else {
-    let smallerStr = str1.length < str2.length ? str1 : str2;
+    let smallerStr =
+      str1.length < str2.length ? str1 : str2;
     let biggerStr = str1.length > str2.length ? str1 : str2;
-    for (let i = 0, p = 0; i < smallerStr.length; i++, p++) {
+    for (
+      let i = 0, p = 0;
+      i < smallerStr.length;
+      i++, p++
+    ) {
       if (smallerStr[i] !== biggerStr[p]) {
         diffCount++;
         if (diffCount > 1) return false;

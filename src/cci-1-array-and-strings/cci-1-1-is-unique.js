@@ -1,3 +1,6 @@
+// Is Unique
+// Implement an algorithm to determine if a string has all unique characters.
+
 // example cases(ec):
 // "abcdef", "abcbf"
 
@@ -9,14 +12,14 @@ function isUnique(str) {
     if (str[i] == " ") continue;
     if (seenMap.has(str[i])) {
       return false;
-    }
-    else {
+    } else {
       seenMap.set(str[i], i);
     }
   }
   return true;
 }
-
+// T: O(n)
+// S: O(n)
 
 // TEST
 console.log(isUnique("abcdef"));
