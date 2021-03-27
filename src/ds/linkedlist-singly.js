@@ -52,6 +52,16 @@ export class SLinkedList {
     return detailedArray;
   }
 
+  traverseTo(val) {
+    let currentNode = this.head;
+
+    while (currentNode.value !== val) {
+      currentNode = currentNode.next;
+    }
+
+    return currentNode;
+  }
+
   append(val) {
     let prevTail = this.tail;
     prevTail.next = new Node(val);
@@ -219,9 +229,15 @@ export class SLinkedList {
 // console.log(sll);
 // console.log(sll.showArray());
 
+// console.log(sll.traverseTo(23));
+// console.log(sll.traverseTo(122));
+// console.log(sll.traverseTo(6));
+// console.log(sll.traverseTo(61));
+
 // console.log("current status: "
 // , sll.showArray());
 // console.log("current length: "
 // , sll.length);
 
 // console.log(sll.showDetailedArray());
+

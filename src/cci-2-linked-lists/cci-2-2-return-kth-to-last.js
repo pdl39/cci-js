@@ -3,8 +3,8 @@
 // singly linked list
 
 // ec:
-// [1, 0, 3, 2, 1, 5, 1, 2, 6, 6]
-// return 4th to last --> 1
+// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// return 4th to last --> 7
 
 import { SLinkedList } from "../ds/linkedlist-singly.js";
 
@@ -55,7 +55,7 @@ console.log(kthToLastTwoPass(10, ll)); // 1
 //---------------------------------------------------------------------------------
 
 
-// 2. two pointers - use two pointers k distance apart to traverse in pararell.
+// 2. two pointers - use two pointers k distance apart to traverse in parallel.
 function kthToLastTwoPointers(k, ll) {
   let pointerAtHead = ll.head;
   let pointerAtK = ll.head;
