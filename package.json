@@ -1,0 +1,11 @@
+{
+  "name": "cci-js",
+  "version": "1.0.0",
+  "description": "cracking-the-coding-interview-algorithm-problems-js-implementation-by-pdl39",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pdl39",
+  "license": "ISC"
+}
