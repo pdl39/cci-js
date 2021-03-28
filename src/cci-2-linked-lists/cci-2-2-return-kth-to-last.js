@@ -6,7 +6,7 @@
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 return 4th to last --> 7 */
 
-import { SLinkedList } from "../ds/linkedlist-singly.js";
+import LinkedListS from "../ds/linkedlist-singly.js";
 
 // 1. two pass - first pass to calculate the total number of nodes. second pass to traverse to (total + 1 - k)th element.
 function kthToLastTwoPass(k, ll) {
@@ -35,7 +35,7 @@ function kthToLastTwoPass(k, ll) {
 
 // TEST
 // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const ll = new SLinkedList(1);
+const ll = new LinkedListS(1);
 ll.append(2);
 ll.append(3);
 ll.append(4);

@@ -5,14 +5,13 @@ The partition element x can appear anywhere in the "right partition";
 it does not need to appear between the left and right partitions. */
 
 
-
 // assume singly linked list.
 
 /* ec: 
 [3, 5, 8, 5, 10, 2, 1]
 partition = 5 --> [3, 1, 2, 10, 5, 5, 8] */
 
-import {SLinkedList} from "../ds/linkedlist-singly.js";
+import LinkedListS from "../ds/linkedlist-singly.js";
 
 function partition(ll, x) {
   let currentNode = ll.head;
@@ -48,7 +47,7 @@ class Node {
 
 // TEST
 // [3, 5, 8, 5, 10, 2, 1]
-const ll = new SLinkedList(3);
+const ll = new LinkedListS(3);
 ll.append(5);
 ll.append(8);
 ll.append(5);

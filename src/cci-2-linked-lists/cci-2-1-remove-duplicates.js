@@ -7,7 +7,7 @@
 --> [1, 0, 3, 2, 5, 6] */
 
 
-import { SLinkedList } from "../ds/linkedlist-singly.js";
+import LinkedListS from "../ds/linkedlist-singly.js";
 
 // 1. Using hash table
 function removeDup(sll) {
@@ -35,7 +35,7 @@ function removeDup(sll) {
 
 // TEST
 // [1, 0, 3, 2, 1, 5, 1, 2, 6, 6]
-const ll = new SLinkedList(1);
+const ll = new LinkedListS(1);
 ll.append(0);
 ll.append(3);
 ll.append(2);
@@ -48,7 +48,7 @@ ll.append(6);
 console.log("input: ", ll.showArray(), "solution: ", removeDup(ll).showArray()); // [1, 0, 3, 2, 5, 6]
 
 // [0, 0, 0, 5, 3, 2, 1, 4, 3, 2, 2, 6, 3, 6]
-const ll2 = new SLinkedList(0);
+const ll2 = new LinkedListS(0);
 ll2.append(0);
 ll2.append(0);
 ll2.append(5);
@@ -97,7 +97,7 @@ function removeDupBF(sll) {
 
 // TEST
 // [1, 0, 3, 2, 1, 5, 1, 2, 6, 6]
-const ll3 = new SLinkedList(1);
+const ll3 = new LinkedListS(1);
 ll3.append(0);
 ll3.append(3);
 ll3.append(2);
@@ -110,7 +110,7 @@ ll3.append(6);
 console.log("input: ", ll3.showArray(), "solution: ", removeDupBF(ll3).showArray()); // [1, 0, 3, 2, 5, 6]
 
 // [0, 0, 0, 5, 3, 2, 1, 4, 3, 2, 2, 6, 3, 6]
-const ll4 = new SLinkedList(0);
+const ll4 = new LinkedListS(0);
 ll4.append(0);
 ll4.append(0);
 ll4.append(5);

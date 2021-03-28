@@ -7,7 +7,7 @@
 [1, 2, 3, 4, 5, 6, 7]
 delete 3. --> [1, 2, 4, 5, 6, 7] */
 
-import {SLinkedList} from "../ds/linkedlist-singly.js";
+import LinkedListS from "../ds/linkedlist-singly.js";
 
 function deleteMiddle(node, ll) {
   if (node === null || node.next === null) return undefined;
@@ -21,7 +21,7 @@ function deleteMiddle(node, ll) {
 
 // TEST
 // [1, 2, 3, 4, 5, 6, 7]
-const ll = new SLinkedList(1);
+const ll = new LinkedListS(1);
 ll.append(2);
 ll.append(3);
 ll.append(4);
