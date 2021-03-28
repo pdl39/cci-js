@@ -1,9 +1,9 @@
 // Palindrome Permutation
 
-// ec: 
-// "Tact Coa" --> "taco cat"
-// "aacac" --> "aaacc"
-// "cddcbb" --> "cdbbdc"
+/* ec: 
+"Tact Coa" --> "taco cat"
+"aacac" --> "aaacc"
+"cddcbb" --> "cdbbdc" */
 
 function palperm(str) {
   let strLower = str.toLowerCase();

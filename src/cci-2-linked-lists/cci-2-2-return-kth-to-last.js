@@ -2,9 +2,9 @@
 
 // singly linked list
 
-// ec:
-// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-// return 4th to last --> 7
+/* ec:
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+return 4th to last --> 7 */
 
 import { SLinkedList } from "../ds/linkedlist-singly.js";
 

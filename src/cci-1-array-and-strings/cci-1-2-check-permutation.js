@@ -1,13 +1,13 @@
 // Check Permutation
-// Given two strings, write a method to decide if one is a permutation of the other.
+/* Given two strings, write a method to decide if one is a permutation of the other.
 
-// ec:
-// ("abcde", "cdabe")
-// ("abbdef", "badfeb")
+/* ec:
+("abcde", "cdabe")
+("abbdef", "badfeb") */
 
-//conditions for permutation:
-// 1. same str length
-// 2. all char of str1 in str2 with equal count
+/* conditions for permutation:
+  1. same str length
+  2. all char of str1 in str2 with equal count */
 
 function checkPerm(str1, str2) {
   let str1Map = new Map();

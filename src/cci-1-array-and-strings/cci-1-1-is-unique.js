@@ -1,8 +1,8 @@
 // Is Unique
-// Implement an algorithm to determine if a string has all unique characters.
+/* Implement an algorithm to determine if a string has all unique characters. */
 
-// example cases(ec):
-// "abcdef", "abcbf"
+/* example cases(ec):
+"abcdef", "abcbf" */
 
 // 1. use hash table
 function isUnique(str) {

@@ -1,9 +1,9 @@
 // One edit away
 
-// ec:
-// "example" vs "eample" --> true
-// "hello" --> "helto" --> true
-// "hihi" --> "bibi" --> false
+/* ec:
+"example" vs "eample" --> true
+"hello" --> "helto" --> true
+"hihi" --> "bibi" --> false */
 
 function oneWay(str1, str2) {
   let lenDiff = Math.abs(str1.length - str2.length);

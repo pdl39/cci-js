@@ -47,6 +47,16 @@ class DLinkedList {
     return detailedArray;
   }
 
+  traverseTo(val) {
+    let currentNode = this.head;
+
+    while (currentNode.value !== val) {
+      currentNode = currentNode.next;
+    }
+
+    return currentNode;
+  }
+
   append(val) {
     let prevTail = this.tail;
     let newTail = new Node(val);

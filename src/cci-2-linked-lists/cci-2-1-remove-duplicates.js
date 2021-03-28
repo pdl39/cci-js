@@ -1,9 +1,11 @@
 // Remove Duplicates
 
-// ec:
-// [1, 0, 3, 2, 1, 5, 1, 2, 6, 6] --> [1, 0, 3, 2, 5, 6]
-
 // assume singly linked list.
+
+/* ec:
+[1, 0, 3, 2, 1, 5, 1, 2, 6, 6] 
+--> [1, 0, 3, 2, 5, 6] */
+
 
 import { SLinkedList } from "../ds/linkedlist-singly.js";
 

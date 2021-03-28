@@ -1,11 +1,11 @@
 // Delete Middle Node
-// given access to only the node to delete (no head information)
+/* given access to only the node to delete (no head information). */
 
 // assume singly linked list.
 
-// ec: 
-// [1, 2, 3, 4, 5, 6, 7]
-// delete 3. --> [1, 2, 4, 5, 6, 7]
+/* ec: 
+[1, 2, 3, 4, 5, 6, 7]
+delete 3. --> [1, 2, 4, 5, 6, 7] */
 
 import {SLinkedList} from "../ds/linkedlist-singly.js";
 
