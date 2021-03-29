@@ -22,6 +22,12 @@ export default class StackArr {
     return this.data;
   }
 
+  pushNode(val) {
+    this.data.push(new Node(val));
+    console.log("ARRNODESTACK DATA:::::::", this.data[0].value);
+    return this.data;
+  }
+
   pop() {
     return this.data.pop();
   }
