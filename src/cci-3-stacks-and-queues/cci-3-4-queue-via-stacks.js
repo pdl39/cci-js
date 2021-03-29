@@ -1,7 +1,7 @@
 // Queue via Stacks
 /* Implement a MyQueue class which implements a queue using two stacks. */
 
-import Node from "../ds/basic-node.js";
+import { NodeType1 } from "../ds/_nodes_.js";
 import StackArr from "../ds/stack-array.js";
 import Queue from "../ds/queue-linkedlist.js";
 
@@ -11,7 +11,7 @@ class QueueViaStacks extends Queue {
     super(val);
     this.addStack = new StackArr(val);
     this.removeStack = new StackArr();
-    this.first = val === null ? null : new Node(val);
+    this.first = val === null ? null : new NodeType1(val);
     this.last = this.first;
     this.size = val === null ? 0 : 1;
   }
@@ -40,7 +40,7 @@ class QueueViaStacks extends Queue {
     }
     else prevLast = this.addStack.data[this.addStack.data.length - 1];
 
-    this.addStack.push(new Node(val));
+    this.addStack.push(new NodeType1(val));
     const addedNode = this.addStack.data[this.addStack.data.length - 1];
     
     if (this.first === null) this.first = addedNode;
